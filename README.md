@@ -1,5 +1,6 @@
 # AES-RSA
 iOS，安全加密。采用RSA签名和AES随机秘钥加密，AES的随机秘钥采用RSA加密。
+密码0123456789abcdef 加密字段1加密结果：2yPBJGtAg/AfuvT8idAmzw==
 
 `````
     NSMutableDictionary *resultDic = [[NSMutableDictionary alloc]initWithCapacity:1];
