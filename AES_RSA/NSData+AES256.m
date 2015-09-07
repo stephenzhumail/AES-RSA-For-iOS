@@ -16,7 +16,7 @@
 #import "NSData+AES256.h"
 
 static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-const NSUInteger kAlgorithmKeySize = kCCKeySizeAES256;
+const NSUInteger kAlgorithmKeySize = kCCKeySizeAES128;
 const NSUInteger kPBKDFRounds = 10000;  // ~80ms on an iPhone 4
 
 static Byte saltBuff[] = {0,1,2,3,4,5,6,7,8,9,0xA,0xB,0xC,0xD,0xE,0xF};
@@ -50,7 +50,7 @@ static Byte ivBuff[]   = {0xA,1,0xB,5,4,0xF,7,9,0x17,3,1,6,8,0xC,0xD,91};
 + (NSString *)AES256EncryptWithPlainText:(NSString *)plain key:(NSString*)key {
     NSData *plainText = [plain dataUsingEncoding:NSUTF8StringEncoding];
 	// 'key' should be 32 bytes for AES256, will be null-padded otherwise
-	char keyPtr[kCCKeySizeAES256+1]; // room for terminator (unused)
+	char keyPtr[kCCKeySizeAES128+1]; // room for terminator (unused)
 	bzero(keyPtr, sizeof(keyPtr)); // fill with zeroes (for padding)
         
 	NSUInteger dataLength = [plainText length];
@@ -62,7 +62,7 @@ static Byte ivBuff[]   = {0xA,1,0xB,5,4,0xF,7,9,0x17,3,1,6,8,0xC,0xD,91};
 	size_t numBytesEncrypted = 0;
     
 	CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmAES128,kCCOptionPKCS7Padding,
-                                          [[NSData AESKeyForPassword:key] bytes], kCCKeySizeAES256,
+                                          [[NSData AESKeyForPassword:key] bytes], kCCKeySizeAES128,
 										  ivBuff /* initialization vector (optional) */,
 										  [plainText bytes], dataLength, /* input */
 										  buffer, bufferSize, /* output */
