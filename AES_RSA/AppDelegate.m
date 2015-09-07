@@ -19,7 +19,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSString *str = [NSData AES256EncryptWithPlainText:@"1" key:@"1dm6m0902wq36F81"];
+    NSString *str = [NSData AES256EncryptWithPlainText:@"1" key:@"0123456789abcdef"];
     NSLog(@"%@",str);
     NSDictionary *stuDic = [NSDictionary dictionaryWithObjectsAndKeys:
                                    @"1",@"lastDaysIncome",
