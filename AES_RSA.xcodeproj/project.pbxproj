@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC2C672E1B9D6ED200A543AC /* public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = DC2C672D1B9D6ED200A543AC /* public_key.pem */; };
 		DCADFC4D1B90530700F6689C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DCADFBFD1B90530700F6689C /* LICENSE */; };
 		DCADFC4E1B90530700F6689C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCADFC4B1B90530700F6689C /* libcrypto.a */; };
 		DCADFC4F1B90530700F6689C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCADFC4C1B90530700F6689C /* libssl.a */; };
@@ -16,13 +17,10 @@
 		DCF1A6F81B9BD53500DBD6C8 /* CRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A6C71B9BD53500DBD6C8 /* CRSA.m */; };
 		DCF1A6F91B9BD53500DBD6C8 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A6C91B9BD53500DBD6C8 /* GTMBase64.m */; };
 		DCF1A6FA1B9BD53500DBD6C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF1A6CB1B9BD53500DBD6C8 /* Images.xcassets */; };
-		DCF1A6FB1B9BD53500DBD6C8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCF1A6CC1B9BD53500DBD6C8 /* Info.plist */; };
 		DCF1A6FC1B9BD53500DBD6C8 /* LcAESRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A6CE1B9BD53500DBD6C8 /* LcAESRSA.m */; };
 		DCF1A6FD1B9BD53500DBD6C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A6CF1B9BD53500DBD6C8 /* main.m */; };
 		DCF1A6FE1B9BD53500DBD6C8 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A6D11B9BD53500DBD6C8 /* NSData+AES256.m */; };
-		DCF1A6FF1B9BD53500DBD6C8 /* paypal.pkcs12 in Resources */ = {isa = PBXBuildFile; fileRef = DCF1A6D21B9BD53500DBD6C8 /* paypal.pkcs12 */; };
 		DCF1A7001B9BD53500DBD6C8 /* private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = DCF1A6D31B9BD53500DBD6C8 /* private_key.pem */; };
-		DCF1A7011B9BD53500DBD6C8 /* public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = DCF1A6D41B9BD53500DBD6C8 /* public_key.pem */; };
 		DCF1A7021B9BD53500DBD6C8 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A6D91B9BD53500DBD6C8 /* NSObject+SBJson.m */; };
 		DCF1A7031B9BD53500DBD6C8 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A6DC1B9BD53500DBD6C8 /* SBJsonParser.m */; };
 		DCF1A7041B9BD53500DBD6C8 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF1A6DE1B9BD53500DBD6C8 /* SBJsonStreamParser.m */; };
@@ -39,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC2C672D1B9D6ED200A543AC /* public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_key.pem; sourceTree = "<group>"; };
 		DC74EDA01B8ED5A9008C1062 /* AES_RSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AES_RSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCADFBFD1B90530700F6689C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DCADFBFF1B90530700F6689C /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
@@ -134,9 +133,7 @@
 		DCF1A6CF1B9BD53500DBD6C8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCF1A6D01B9BD53500DBD6C8 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
 		DCF1A6D11B9BD53500DBD6C8 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
-		DCF1A6D21B9BD53500DBD6C8 /* paypal.pkcs12 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paypal.pkcs12; sourceTree = "<group>"; };
 		DCF1A6D31B9BD53500DBD6C8 /* private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private_key.pem; sourceTree = "<group>"; };
-		DCF1A6D41B9BD53500DBD6C8 /* public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_key.pem; sourceTree = "<group>"; };
 		DCF1A6D81B9BD53500DBD6C8 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		DCF1A6D91B9BD53500DBD6C8 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		DCF1A6DA1B9BD53500DBD6C8 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -385,9 +382,8 @@
 			children = (
 				DCF1A6CB1B9BD53500DBD6C8 /* Images.xcassets */,
 				DCF1A6CC1B9BD53500DBD6C8 /* Info.plist */,
-				DCF1A6D21B9BD53500DBD6C8 /* paypal.pkcs12 */,
+				DC2C672D1B9D6ED200A543AC /* public_key.pem */,
 				DCF1A6D31B9BD53500DBD6C8 /* private_key.pem */,
-				DCF1A6D41B9BD53500DBD6C8 /* public_key.pem */,
 			);
 			name = resource;
 			sourceTree = "<group>";
@@ -418,7 +414,7 @@
 		DC74ED981B8ED5A8008C1062 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = StephenZhu;
 				TargetAttributes = {
 					DC74ED9F1B8ED5A9008C1062 = {
@@ -449,11 +445,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF1A6FF1B9BD53500DBD6C8 /* paypal.pkcs12 in Resources */,
 				DCF1A7001B9BD53500DBD6C8 /* private_key.pem in Resources */,
 				DCF1A6FA1B9BD53500DBD6C8 /* Images.xcassets in Resources */,
-				DCF1A7011B9BD53500DBD6C8 /* public_key.pem in Resources */,
-				DCF1A6FB1B9BD53500DBD6C8 /* Info.plist in Resources */,
+				DC2C672E1B9D6ED200A543AC /* public_key.pem in Resources */,
 				DCF1A6F61B9BD53500DBD6C8 /* LaunchScreen.xib in Resources */,
 				DCADFC4D1B90530700F6689C /* LICENSE in Resources */,
 				DCF1A6F71B9BD53500DBD6C8 /* Main.storyboard in Resources */,
@@ -532,6 +526,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -547,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -585,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -597,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -608,6 +604,7 @@
 					include,
 				);
 				INFOPLIST_FILE = AES_RSA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -615,6 +612,7 @@
 					"\"$(SRCROOT)/lib\"",
 				);
 				OTHER_CFLAGS = "-Ipath-to-include";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AES_RSA;
 			};
 			name = Debug;
@@ -623,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -634,6 +633,7 @@
 					include,
 				);
 				INFOPLIST_FILE = AES_RSA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -641,6 +641,7 @@
 					"\"$(SRCROOT)/lib\"",
 				);
 				OTHER_CFLAGS = "-Ipath-to-include";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AES_RSA;
 			};
 			name = Release;

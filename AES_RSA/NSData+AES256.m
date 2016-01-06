@@ -81,7 +81,7 @@ static Byte ivBuff[]   = {0xA,1,0xB,5,4,0xF,7,9,0x17,3,1,6,8,0xC,0xD,91};
     
     NSData *cipherData = [NSData dataWithBase64EncodedString:ciphertexts];
 	// 'key' should be 32 bytes for AES256, will be null-padded otherwise
-	char keyPtr[kCCKeySizeAES256+1]; // room for terminator (unused)
+	char keyPtr[kCCKeySizeAES128+1]; // room for terminator (unused)
 	bzero(keyPtr, sizeof(keyPtr)); // fill with zeroes (for padding)
 	    
 	NSUInteger dataLength = [cipherData length];
@@ -91,7 +91,7 @@ static Byte ivBuff[]   = {0xA,1,0xB,5,4,0xF,7,9,0x17,3,1,6,8,0xC,0xD,91};
 	    
 	size_t numBytesDecrypted = 0;
 	CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt, kCCAlgorithmAES128, kCCOptionPKCS7Padding,
-										  [[NSData AESKeyForPassword:key] bytes], kCCKeySizeAES256, 
+										  [[NSData AESKeyForPassword:key] bytes], kCCKeySizeAES128,
 										  ivBuff ,/* initialization vector (optional) */
 										  [cipherData bytes], dataLength, /* input */
 										  buffer, bufferSize, /* output */
